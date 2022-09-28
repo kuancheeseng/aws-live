@@ -1,0 +1,242 @@
+ /* Basics */
+ html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    background: #f0f0f0;
+    background-image: url("img/background.jpg");
+    background-repeat: repeat;
+    position:fixed;
+    }
+    #container {
+    position: fixed;
+    width: 900px;
+    height: 450px;
+    top: 35%;
+    left: 35%;
+    margin-top: -140px;
+    margin-left: -170px;
+    background: #fff;
+    border-radius: 5px;
+    border: 5px solid #ccc;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    }
+    #current_date {
+        position: fixed;
+        width: 900px;
+        height: 450px;
+        top: 30%;
+        left: 35%;
+        margin-left: -170px;
+        text-align: center;
+        font-size: 20px;
+        }
+    .buttonBack{
+      background-color:#555;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      width: 300px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 30px;
+      font-weight: bold;
+      position: relative;
+    }
+    .buttonBack:hover{
+      background-color:rgb(50, 48, 48);
+    }
+    .button1 {
+      background-color: #555;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      width: 500px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 30px;
+      font-weight: bold;
+      position: relative;
+      margin-left: 23%;
+    }
+    .button1:hover{
+      background-color:rgb(50, 48, 48);
+    }
+    form {
+    margin: 0 auto;
+    margin-top: 50px;
+    }
+    label {
+    color: #555;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 3%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    }
+    p a {
+    font-size: 11px;
+    color: red;
+    float: right;
+    margin-top: -13px;
+    margin-right: 20px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+    }
+    p a:hover {
+    color: #555;
+    }
+    input {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 25px;
+    outline: none;
+    }
+    input[type=text],
+    input[type=password] ,input[type=time]{
+    color: #777;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 10px;
+    width: 600px;
+    height: 35px;
+    border: 1px solid #c7d0d2;
+    border-radius: 2px;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+    }
+    input[type=text]:hover,
+    input[type=password]:hover,input[type=time]:hover {
+    border: 1px solid #b6bfc0;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .7), 0 0 0 5px #f5f7f8;
+    }
+    input[type=text]:focus,
+    input[type=password]:focus,input[type=time]:focus {
+    border: 1px solid #a8c9e4;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #e6f2f9;
+    }
+    #lower {
+    background: #ecf2f5;
+    width: 100%;
+    height: 92px;
+    margin-top: 40px;
+    box-shadow: inset 0 1px 1px #fff;
+    border-top: 1px solid #ccc;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    }
+    input[type=checkbox] {
+    margin-left: 20px;
+    margin-top: 35px;
+    }
+    .check {
+    margin-left: 2px;
+    font-size: 20px;
+    color: #444;
+    text-shadow: 0 5px 0 #fff;
+    }
+    input[type=submit] {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #acd6ef; /*IE fallback*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
+    background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+    background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+    border-radius: 30px;
+    border: 1px solid #66add6;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+    cursor: pointer;
+    }
+    input[type=submit]:hover {
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8)); */
+    background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+    background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+    }
+    input[type=submit]:active {
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff)); */
+    background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+    background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+    }
+
+    nav ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;}
+    nav ul li a {float: right}
+    nav ul li  a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
+    nav ul li {display: inline-block;width: 100px;}
+
+    .right-navbar, .left-navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #66add6;
+      }
+
+      .navbar { 
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    display: block;
+    display: inline-block;
+    height: 30px;
+    margin-left: 1%;
+    margin-right: 3%;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 1%;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .topnav.ul {
+    list-style: none;
+    background: red;
+    text-align:center;
+    padding: 0;
+    margin: 0;
+  }
+
+ 
