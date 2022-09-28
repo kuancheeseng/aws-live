@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head style="opacity: 0.1;">
+      <link href="{{ url_for('static', filename='web.css')}}" rel="stylesheet" />
+        <title>CC Assignment</title>
+   </head>
+
+   
+   <body>
+    <header style="opacity:0.95;">
+        <div class="topnav">
+         <a href="/">Home</a>
+         <a href="/addemp/">Hire Employee</a>
+         <a class="active" href="/delemp/">Fire Employees</a>
+         <a href="/getemp/">Employee Details</a>
+
+            
+    </header>
+       
+       <div id = "container">
+         
+         <body style="background-color: lightgrey; text-align: center;">
+            <h1 style="font-size: 30pt">DELETE SUCCESSFUL</h1><br>
+            <h2>Following Employee has been deleted to the database</h2><br>
+            <h2>{{ name }}</h2><br>
+            <a href="Home.html"><button class="buttonBack" style="margin-top: 20pt;">BACK</button></a>
+         </body>
+      </div>
+   </body>
+</html>
+
+<!-- a login in page with navigation panel at center?
+ .navbar { 
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

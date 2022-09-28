@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head style="opacity: 0.1;">
+        <link rel="stylesheet" href="{{ url_for('static', filename='web.css')}}" />
+        <title>CC Assignment</title>
+   </head>
+
+   
+   <body>
+    <header style="opacity:0.95;">
+      <div class="topnav">
+         <a class="active" href="/">Home</a>
+         <a href="/addemp/">Hire Employee</a>
+         <a href="/delemp/">Fire Employees</a>
+         <a href="/getemp/">Employee Details</a>
+       </div>
+    </header>
+       
+       <div id = "container" style = "height: 400pt">
+         <h1 style="color: black; text-align: center; font-size: 40px; font-weight: bold;">Employee Database</h1>
+         
+	 <div>
+		 <h2 style="margin-left: 16%;"> Date and Time is <span id="time"></span>{{ date.strftime("%A, %d %B, %Y at %X") }}</h2>
+<!-- 		 {{ date.strftime("%A, %d %B, %Y at %X") }} -->
+<!-- 		 <script src = time.js></script> -->
+	 </div>
+         
+          <a href="/addemp/">
+		  <button class="button1">Hire Employee</button>
+	  </a>
+          <a href="/delemp/">
+		  <button class="button1">Fire Employee</button>
+	  </a>
+          <a href="/getemp/">
+		  <button class="button1">Employee Detail</button>
+	  </a>   
+      </div>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

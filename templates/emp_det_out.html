@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head style="opacity: 0.1;">
+      <link href="{{ url_for('static', filename='web.css')}}" rel="stylesheet" />
+      <title>CC Assignment</title>
+   </head>
+
+   
+   <body>
+    <header style="opacity:0.95;">
+        <div class="topnav">
+         <a href="/">Home</a>
+         <a href="/addemp/">Hire Employee</a>
+         <a href="/delemp/">Fire Employees</a>
+         <a class="active" href="/getemp/">Employee Details</a>
+    </header>
+       <div id = "container" style="height: 400pt;">
+         <body style="background-color: lightgrey; text-align: center;">
+            <form>
+               <div>
+                     <label style="font-size: 15pt; margin-right: 10%; font-weight: bold;">Employee ID:</label>
+                     <label style="font-size: 15pt; margin-left: 10%; font-weight: bold;">First Name:</label><br>
+                     <label style="font-size: 15pt; margin-right: 10%;margin-left: 10%; font-weight: bold; margin-top: 1%;">{{ emp_id_output }}</label> 
+                     <label style="font-size: 15pt; margin-left: 15%;margin-right: 5%; font-weight: bold; margin-top: 1%;">{{ fname }}</label> 
+                     <br><br>
+   
+                     <label style="font-size: 15pt; margin-right: 10%; font-weight: bold;">Last Name:</label>
+                     <label style="font-size: 15pt; margin-left: 10%; font-weight: bold;">Primary Interest:</label><br>
+                     <label style="font-size: 15pt; margin-right: 10%;margin-left: 10%; font-weight: bold; margin-top: 1%;">{{ lname }}</label> 
+                     <label style="font-size: 15pt; margin-left: 15%;margin-right: 5%; font-weight: bold; margin-top: 1%;">{{ emp_loc_output }}</label> 
+                     <br><br>
+
+                     <label style="font-size: 15pt; margin-right: 10%; font-weight: bold;">Location:</label>
+                     <label style="font-size: 15pt; margin-left: 10%; font-weight: bold;">Image Url:</label><br>
+                     <label style="font-size: 15pt; margin-right: 10%;margin-left: 10%; font-weight: bold; margin-top: 1%;">{{ emp_pri_skill_output }}</label> 
+                     <label style="font-size: 15pt; margin-left: 15%;margin-right: 5%; font-weight: bold; margin-top: 1%;">{{ emp_img }}</label> 
+                     <br><br>
+               </div>
+               <form action="/" autocomplete="on" method = "GET">
+                  <a href="/">
+                     <button type="submit" class="buttonBack" style="margin-left: 1%;">BACK</button><br><br>
+                  </a>
+				   </form>
+            </form>
+         </body>
+      </div>
+   </body>
+</html>
+

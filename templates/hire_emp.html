@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head style="opacity: 0.1;">
+        <link href="{{ url_for('static', filename='web.css')}}" rel="stylesheet" />
+        <title>CC Assignment</title>
+   </head>
+
+   
+   <body>
+    <header style="opacity:0.95;">
+      <div class="topnav">
+         <a href="/">Home</a>
+         <a class="active" href="/addemp/">Hire Employee</a>
+         <a href="/delemp/">Fire Employees</a>
+         <a href="/getemp/">Employee Details</a>
+      </div>
+
+            
+    </header>
+       
+       <div id = "container" style="height: 370pt">
+       <h1 style="color: black; text-align: center; font-size: 40px;">Hire Employee</h1>
+       <form action="/addemp/results" autocomplete="on" method = "POST" enctype="multipart/form-data">
+
+            <label for="emp_id" style="font-size: 15pt; margin-left: 1%;">Employee ID: </label><input type="text" autofocus placeholder="Employee ID" name="emp_id" style="width: 240px; font-size: 15pt;">
+
+            <label for="fname" style="font-size: 15pt; margin-left: 1%;">First Name: </label><input type="text" autofocus placeholder="First Name" name="first_name" style="width: 240px; font-size: 15pt;">
+
+            <label for="lname" style="font-size: 15pt; margin-left: 1%;">Last Name: </label><input type="text" autofocus placeholder="Last Name" name="last_name" style="width: 240px; font-size: 15pt;">
+
+            <label for="pri_skill" style="font-size: 15pt; margin-left: 1%;">Primary Skills: </label> <input type="text" autofocus placeholder="Primary Skill" name="pri_skill" style="width: 240px; font-size: 15pt;">
+
+            <label for="location" style="font-size: 15pt; margin-left: 1%;">Location： </label> <input type="text" autofocus placeholder="Location" name="location" style="width: 240px; font-size: 15pt;">
+
+            <label for="location" style="font-size: 15pt; margin-left: 5%;">Image: </label>&#9<input type=file autofocus name="emp_image_file" style="height:25px;font-size:14pt;color:grey;"> <br><br>
+
+		  		<button type="submit" class="buttonBack" style="margin-left: 35%;">HIRE</button>
+
+			</form>
+      </div>
+            </div>
+            <!--/ lower-->
+         </form>
+      </div>
+   </body>
+</html>
+

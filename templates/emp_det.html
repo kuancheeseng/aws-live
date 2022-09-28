@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head style="opacity: 0.1;">
+        <link href="{{ url_for('static', filename='web.css')}}" rel="stylesheet" />
+        <title>CC Assignment</title>
+   </head>
+
+   <body>
+    <header style="opacity:0.95;">
+        <div class="topnav">
+         <a href="/">Home</a>
+         <a href="/addemp/">Hire Employee</a>
+         <a href="/delemp/">Fire Employees</a>
+         <a class="active" href="/getemp/">Employee Details</a>
+    </header>
+       <div id = "container">
+         <h1 style="color: black; text-align: center; font-size: 40px;">Employee Details</h1>
+
+         <form action="/getemp/results" autocomplete="on" method="POST">
+
+				<label for="username">Employee ID:</label>
+            
+            <input type="text" name="emp_id" autofocus size="40"><br><br>
+
+            <a href="/getemp/results">
+               <button type="submit" class = "buttonBack" style="margin-top: 15%; margin-left: 35%;">SEARCH</button><br><br>
+            </a>
+		  		
+			</form>
+         </form>
+      </div>
+   </body>
+</html>
