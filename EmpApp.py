@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_templates, request
 from pymysql import connections
 import os
 import boto3
